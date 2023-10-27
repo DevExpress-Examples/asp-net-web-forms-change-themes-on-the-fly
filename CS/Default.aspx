@@ -10,11 +10,9 @@
 <body>
     <form id="form1" runat="server">
 		<div>            
-			<dx:ASPxHyperLink ID="ASPxHyperLink1" runat="server" Text="ASP.Net Way" NavigateUrl="Default2.aspx">
-			</dx:ASPxHyperLink>
-			<br /><br /><br /><br />
-			<dx:ASPxHyperLink ID="ASPxHyperLink2" runat="server" Text="DevExpress Way" NavigateUrl="Default3.aspx">
-			</dx:ASPxHyperLink>
+			<dx:ASPxHyperLink ID="ASPxHyperLink1" runat="server" Text="ASP.Net Way" NavigateUrl="Default2.aspx" />
+			<br /><br />
+			<dx:ASPxHyperLink ID="ASPxHyperLink2" runat="server" Text="DevExpress Way" NavigateUrl="Default3.aspx" />
 		</div>
     </form>
 </body>
