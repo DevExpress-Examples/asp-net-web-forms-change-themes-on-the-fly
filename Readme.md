@@ -52,4 +52,3 @@ protected void Page_PreInit(object sender, EventArgs e) {
 ## More Examples 
 
 * [ASP.NET MVC - How to change themes on the fly](https://github.com/DevExpress-Examples/asp-net-mvc-how-to-change-themes-on-the-fly)
-* 
