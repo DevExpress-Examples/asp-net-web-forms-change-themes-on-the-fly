@@ -1,23 +1,53 @@
 <!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128566266/13.2.5%2B)
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E1342)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* [Default.aspx](./CS/Default.aspx) (VB: [Default.aspx](./VB/Default.aspx))
-* [Default2.aspx](./CS/Default2.aspx) (VB: [Default2.aspx](./VB/Default2.aspx))
-* [Default3.aspx](./CS/Default3.aspx) (VB: [Default3.aspx](./VB/Default3.aspx))
-<!-- default file list end -->
-# How to change themes on the fly
+# ASP.NET Web Forms - How to change themes on the fly
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/e1342/)**
 <!-- run online end -->
 
+This example illustrates how to change themes on the fly. 
 
-<p>This example illustrates how to change themes on the fly. For this, use one of the following approaches: <br><br>1) <a href="https://documentation.devexpress.com/#AspNet/CustomDocument11725">ASP.NET mechanism</a>. Use the <strong>Page.Theme</strong> property to apply a theme to a page.<br>2) <a href="https://documentation.devexpress.com/#AspNet/CustomDocument11724">DevExpress mechanism</a>. Use the <a href="https://documentation.devexpress.com/#AspNet/DevExpressWebASPxWebControl_GlobalThemetopic">ASPxWebControl.GlobalTheme</a> property to set a theme to a page.<br><br>In both cases, a theme should be specified in the <strong>Page_PreInit </strong>event handler.<br><br><strong><em>Note:</em></strong><br>To switch between different mechanisms, use the <em>ASP.NET way</em> and <em>DevExpress way</em> links on the Default.aspx page of the example.</p>
+## Implementation Details
 
-<br/>
+You can apply a theme to DevExpress ASP.NET Web Forms controls in the following ways:
 
+### Apply a Theme with the ASP.NET Mechanism
 
+Specify a page's `Page.Theme`﻿ property in the `Page.PreInit`﻿ event handler.
+
+```cs
+protected void Page_PreInit(object sender, EventArgs e) {
+    HttpCookie c = Request.Cookies["theme"];
+    Page.Theme = c == null ? "Aqua" : c.Value;
+}
+```
+
+### Apply a Theme with the DevExpress Mechanism
+
+Set the [ASPxWebControl.GlobalTheme](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxWebControl.GlobalTheme) property to the theme name in the `Page.PreInit﻿` event handler.
+
+```cs
+protected void Page_PreInit(object sender, EventArgs e) {
+    HttpCookie c = Request.Cookies["theme"];
+    ASPxWebControl.GlobalTheme = c == null ? "Aqua" : c.Value;
+}
+```
+
+## Files to Review
+
+* [Default2.aspx](./CS/Default2.aspx) (VB: [Default2.aspx](./VB/Default2.aspx))
+* [Default2.aspx.cs](./CS/Default2.aspx.cs) (VB: [Default2.aspx.vb](./VB/Default2.aspx.vb))
+* [Default3.aspx](./CS/Default3.aspx) (VB: [Default3.aspx](./VB/Default3.aspx))
+* [Default3.aspx.cs](./CS/Default3.aspx.cs) (VB: [Default3.aspx.vb](./VB/Default3.aspx.vb))
+
+## Documentation
+
+* [Apply a Theme with the ASP.NET Mechanism](https://docs.devexpress.com/AspNet/11725/common-concepts/appearance-customization-theming/apply-a-theme-with-the-aspnet-mechanism)
+* [Apply a Theme with the DevExpress Mechanism](https://docs.devexpress.com/AspNet/11724/common-concepts/appearance-customization-theming/apply-a-theme-with-the-devexpress-mechanism)
+
+## More Examples 
+
+* [ASP.NET MVC - How to change themes on the fly](https://github.com/DevExpress-Examples/asp-net-mvc-how-to-change-themes-on-the-fly)
