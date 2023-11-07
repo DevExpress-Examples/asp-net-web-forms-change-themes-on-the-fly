@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="true" CodeFile="Default2.aspx.vb" Inherits="Default2" %>
+<%@ Page Language="VB" AutoEventWireup="true" CodeFile="Default2.aspx.vb" Inherits="Default2" %>
 
 <%@ Register Assembly="DevExpress.Web.v13.2, Version=13.2.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
 

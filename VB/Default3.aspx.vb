@@ -6,16 +6,16 @@ Imports System.Web.UI
 Imports System.Web.UI.WebControls
 
 Partial Public Class Default3
-    Inherits System.Web.UI.Page
+	Inherits System.Web.UI.Page
 
-    Protected Sub Page_PreInit(ByVal sender As Object, ByVal e As EventArgs)
-        Dim c As HttpCookie = Request.Cookies("theme")
-        ASPxWebControl.GlobalTheme = If(c Is Nothing, "Aqua", c.Value)
-    End Sub
-    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
-        Dim c As HttpCookie = Request.Cookies("theme")
-        If (Not IsPostBack) AndAlso (c IsNot Nothing) Then
-            rbList.Value = c.Value
-        End If
-    End Sub
+	Protected Sub Page_PreInit(ByVal sender As Object, ByVal e As EventArgs)
+		Dim c As HttpCookie = Request.Cookies("theme")
+		ASPxWebControl.GlobalTheme = If(c Is Nothing, "Aqua", c.Value)
+	End Sub
+	Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+		Dim c As HttpCookie = Request.Cookies("theme")
+		If Not IsPostBack AndAlso (c IsNot Nothing) Then
+			rbList.Value = c.Value
+		End If
+	End Sub
 End Class
