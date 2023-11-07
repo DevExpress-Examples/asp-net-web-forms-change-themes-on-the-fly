@@ -12,7 +12,7 @@ This example illustrates how to change themes on the fly.
 
 ## Implementation Details
 
-You can apply a theme to DevExpress ASP.NET Web Forms controls in the following ways.
+You can apply a theme to DevExpress ASP.NET Web Forms controls in the following ways:
 
 ### Apply a Theme with the ASP.NET Mechanism
 
