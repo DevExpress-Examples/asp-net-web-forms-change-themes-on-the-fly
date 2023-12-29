@@ -5,9 +5,6 @@
 <!-- default badges end -->
 
 # ASP.NET Web Forms - How to change themes on the fly
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128566266/)**
-<!-- run online end -->
 
 This example illustrates how to change themes on the fly. 
 
