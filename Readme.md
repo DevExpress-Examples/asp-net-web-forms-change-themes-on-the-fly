@@ -51,7 +51,7 @@ protected void Page_PreInit(object sender, EventArgs e) {
 
 * [ASP.NET MVC - How to change themes on the fly](https://github.com/DevExpress-Examples/asp-net-mvc-change-themes-on-the-fly)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-change-themes-on-the-fly&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-change-themes-on-the-fly&~~~was_helpful=no)
 
